@@ -3,8 +3,8 @@ const makeTestFn = (fns) => (cb) => {
     cb();
   });
 };
-//Test timings should be ~1000ms and ~2000ms for 3 and 4 respectively,
-//instead we get ~1000ms and ~1000ms. More generally the timing for
+//Test timings should be ~1000ms and ~1500ms for 3 and 4 respectively,
+//instead we get ~1000ms and ~500ms. More generally the timing for
 //test 4 appears to be actual test 4 time - test 3 time
 describe("Wrong Test Timing 1", () => {
   it(
@@ -27,7 +27,7 @@ describe("Wrong Test Timing 1", () => {
           console.log(4);
           expect(4).toBe(4);
           cb();
-        }, 2000);
+        }, 1500);
       }),
     ])
   );

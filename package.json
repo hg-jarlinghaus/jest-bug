@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest -i ./"
+    "test:works": "jest --notify ./work.test.js",
+    "test:fail": "jest --notify ./fail.test.js",
+    "test:fail2": "jest --notify ./fail2.test.js"
   },
   "author": "",
   "license": "ISC",
