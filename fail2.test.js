@@ -6,7 +6,7 @@ const makeTestFn = (fns) => (cb) => {
 //Test timings should be ~1000ms and ~1500ms for 3 and 4 respectively,
 //instead we get ~1000ms and ~500ms. More generally the timing for
 //test 4 appears to be actual test 4 time - test 3 time
-describe("Wrong Test Timing 1", () => {
+describe("Wrong Test Timing 2", () => {
   it(
     "3",
     makeTestFn([
